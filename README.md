@@ -71,7 +71,7 @@ You can also update same JSON file with these methods
 	$json_db->update( [ 'name' => 'Oji', 'age' => 10 ] )
 		->from( 'users.json' )
 		->where( [ 'name' => 'Thomas' ] )
-		->get();
+		->trigger();
 	
 ```
 *Without the **where()** method, it will update all rows*
